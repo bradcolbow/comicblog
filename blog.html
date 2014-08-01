@@ -1,0 +1,18 @@
+---
+layout: default
+title: Brad's Blog
+---
+
+{% include temp-header.html %}
+<div class="blog">
+<div class="blogpost">
+<div class="post">
+<section>
+	{% for post in site.posts %}
+      <li><a href="{{ post.url }}"><h2>{{ post.title }}</h2></a><p class="date">{{ post.date | date_to_string }}</p><p>{{ post.excerpt }}</p></li>
+    {% endfor %}
+</section>
+
+</div>
+</div>
+</div>

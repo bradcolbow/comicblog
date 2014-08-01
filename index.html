@@ -1,0 +1,53 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div class="home">
+<header>
+	<ul>
+		<li>Comics</li>
+		<li>Video</li>
+		<li>Blog</li>
+		<li>Contact</li>
+	</ul> 
+	{% include headsvg.html %}
+</header>
+<section class="featured">
+	<div class="headline"><h2>Hermit Crab - Part 1</h2></div>
+</section>
+<section class="homeblogposts">
+    {% for post in site.posts %}
+      <div class="homepost {{ post.bodyclass }}">
+      	<!--{{ post.date | date_to_string }}--> 
+      	<div class="headline"><img src="images/white-circle.png"><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></div>
+      </div>
+    {% endfor %}
+</section>
+<section class="comics clearfix">
+	<h3>Comic Collections</h3>
+	<div class="comicpod">
+		<img src="images/hermit-home.jpg"><h4>Hermit Crab</h4>
+	</div>
+	<div class="comicpod">
+		<img src="images/fwp-home.jpg"><h4>First World Problems</h4>
+	</div>
+	<div class="comicpod">
+		<img src="images/brads-home.jpg"><h4>The Brads</h4>
+	</div>
+</section>
+<section class="otherstuff">
+	<div class="homepost">
+      	<div class="aboutpost"><h3>Here are Some other things I do around the web</h3></div>
+    </div>
+    <div class="homepost rustbeltrefresh">
+      	<div class="headline"><img src="images/white-circle.png"><h3><a href="#">Rustbelt Refresh - A Conference For Web Designers</a></h3></div>
+    </div>
+    <div class="homepost colbowdesign">
+      	<div class="headline"><img src="images/white-circle.png"><h3><a href="#">Colbow Design - UX and Web Design Stuff</a></h3></div>
+    </div>
+    <div class="homepost wtww">
+      	<div class="headline"><img src="images/white-circle.png"><h3><a href="#">Where The Web Was Video Series</a></h3></div>
+    </div>
+</section>
+</div>

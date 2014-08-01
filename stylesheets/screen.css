@@ -1,0 +1,538 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.0.0-p195/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../sass/screen.scss */
+h2 {
+  font-size: 4.5em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  line-height: 1.2em;
+  padding: 0 0 35px 0;
+}
+@media only screen and (max-width: 600px) {
+  /* line 11, ../sass/screen.scss */
+  h2 {
+    font-size: 3em;
+  }
+}
+
+/* line 22, ../sass/screen.scss */
+h3 {
+  font-size: 1.375em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  line-height: 1.2em;
+}
+
+/* line 31, ../sass/screen.scss */
+p {
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+  padding: 0 0 32px 0;
+}
+@media only screen and (max-width: 600px) {
+  /* line 31, ../sass/screen.scss */
+  p {
+    font-size: 1em;
+  }
+}
+
+/* line 42, ../sass/screen.scss */
+blockquote {
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: 0 3% 32px 5%;
+}
+
+/* line 49, ../sass/screen.scss */
+header {
+  height: 59px;
+  padding-top: 9px;
+}
+/* line 53, ../sass/screen.scss */
+header .logo {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+/* line 59, ../sass/screen.scss */
+header .svg-main {
+  fill: #9db8cf;
+}
+
+/* line 64, ../sass/screen.scss */
+.blogpost {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 3% 0 3%;
+}
+/* line 69, ../sass/screen.scss */
+.blogpost h3 {
+  font-size: 2.6em;
+  padding: 40px 0 20px 0;
+}
+@media only screen and (max-width: 600px) {
+  /* line 69, ../sass/screen.scss */
+  .blogpost h3 {
+    font-size: 1.75em;
+  }
+}
+/* line 77, ../sass/screen.scss */
+.blogpost a {
+  color: #b21414;
+  text-decoration: none;
+}
+/* line 81, ../sass/screen.scss */
+.blogpost a:hover {
+  color: #b21414;
+  text-decoration: underline;
+}
+
+/* line 86, ../sass/screen.scss */
+.post {
+  width: 70%;
+  padding: 0 12% 80px 0;
+  float: right;
+}
+
+/* line 91, ../sass/screen.scss */
+.postdate {
+  width: 8%;
+  padding: 0 0 4% 0;
+  float: left;
+}
+/* line 95, ../sass/screen.scss */
+.postdate p {
+  font-size: .8em;
+  text-align: center;
+  padding-top: 22px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 91, ../sass/screen.scss */
+  .postdate {
+    display: none;
+    padding: 0;
+  }
+}
+
+/* line 108, ../sass/screen.scss */
+.home header {
+  background-color: #627e95;
+}
+/* line 111, ../sass/screen.scss */
+.home header ul {
+  padding: 0 2.4%;
+}
+/* line 114, ../sass/screen.scss */
+.home header li {
+  color: #fff;
+  font-size: 0.88em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  list-style-type: none;
+  padding: 4px 20px 0 20px;
+}
+/* line 122, ../sass/screen.scss */
+.home header li:nth-child(1), .home header li:nth-child(2) {
+  float: left;
+}
+/* line 125, ../sass/screen.scss */
+.home header li:nth-child(3), .home header li:nth-child(4) {
+  float: right;
+}
+/* line 129, ../sass/screen.scss */
+.home h2 {
+  font-size: 2.25em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  line-height: 1.2em;
+  padding: 0 0 0 0;
+  color: #fff;
+  margin: auto 20px;
+}
+
+/* line 139, ../sass/screen.scss */
+.featured {
+  height: 600px;
+  background: url(../images/whipping-boy.jpg) center 0px no-repeat;
+  background-color: #627e95;
+  position: relative;
+}
+
+/* line 146, ../sass/screen.scss */
+.headline {
+  height: 122px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-flex;
+}
+
+/* line 153, ../sass/screen.scss */
+.homepost {
+  height: 400px;
+  position: relative;
+}
+/* line 157, ../sass/screen.scss */
+.homepost .headline {
+  height: 95px;
+}
+/* line 160, ../sass/screen.scss */
+.homepost h3 {
+  color: #000;
+  margin: auto 8px;
+}
+/* line 164, ../sass/screen.scss */
+.homepost a {
+  text-decoration: none;
+  color: white;
+}
+/* line 168, ../sass/screen.scss */
+.homepost a:hover {
+  text-decoration: none;
+  color: #b9cdde;
+}
+/* line 172, ../sass/screen.scss */
+.homepost img {
+  height: 30px;
+  width: 30px;
+  margin: auto 0px;
+  padding-left: 20px;
+}
+
+/* line 179, ../sass/screen.scss */
+.comics {
+  background-color: #90b33d;
+  padding-bottom: 36px;
+  width: 100%;
+}
+/* line 184, ../sass/screen.scss */
+.comics h3 {
+  color: #fff;
+  font-size: 2.6em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  line-height: 1.5em;
+  text-align: center;
+  padding: 25px 0 25px 0;
+}
+/* line 193, ../sass/screen.scss */
+.comics h4 {
+  color: #fff;
+  font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  line-height: 1.5em;
+  padding: 4px 0 0 0;
+}
+
+/* line 202, ../sass/screen.scss */
+.otherstuff {
+  height: 200px;
+  background-color: #1e3a51;
+}
+/* line 206, ../sass/screen.scss */
+.otherstuff .homepost {
+  height: 200px;
+}
+
+/* line 210, ../sass/screen.scss */
+.homepost {
+  width: 25%;
+  float: left;
+  height: 400px;
+}
+
+/* line 215, ../sass/screen.scss */
+.aboutpost {
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-flex;
+}
+/* line 220, ../sass/screen.scss */
+.aboutpost h3 {
+  color: #fff;
+  font-size: 1.88em;
+  padding-left: 14px;
+}
+
+/* line 226, ../sass/screen.scss */
+.rustbeltrefresh {
+  background: url(../images/rustbelt.jpg) center;
+}
+
+/* line 229, ../sass/screen.scss */
+.colbowdesign {
+  background: url(../images/colbowdesign.jpg) center;
+}
+
+/* line 232, ../sass/screen.scss */
+.wtww {
+  background: url(../images/werewebwas.jpg) center;
+}
+
+/* line 236, ../sass/screen.scss */
+.comicpod {
+  width: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+  text-align: center;
+  float: left;
+}
+
+/* line 242, ../sass/screen.scss */
+.blog h2 {
+  font-size: 3.2em;
+  padding-bottom: 0px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 242, ../sass/screen.scss */
+  .blog h2 {
+    font-size: 2em;
+  }
+}
+/* line 251, ../sass/screen.scss */
+.blog li {
+  padding: 0 0 60px 0;
+  list-style: none;
+}
+/* line 255, ../sass/screen.scss */
+.blog a {
+  color: #b21414;
+  text-decoration: none;
+}
+/* line 259, ../sass/screen.scss */
+.blog a:hover {
+  color: #b21414;
+}
+/* line 262, ../sass/screen.scss */
+.blog .date {
+  padding-bottom: 18px;
+  font-size: .85em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.6em;
+  color: #8f8f8f;
+}
+
+/* line 271, ../sass/screen.scss */
+.temp-header {
+  height: 59px;
+  padding-top: 9px;
+}
+/* line 275, ../sass/screen.scss */
+.temp-header img {
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+/* line 284, ../sass/screen.scss */
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+/* line 290, ../sass/screen.scss */
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* CUSTOM POSTS */
+/* line 300, ../sass/screen.scss */
+.whippingboy {
+  background: url(../images/whipping-boy.jpg) center 70px no-repeat;
+  background-color: #627e95;
+}
+@media only screen and (max-width: 720px) {
+  /* line 300, ../sass/screen.scss */
+  .whippingboy {
+    background: none;
+    background-color: #627e95;
+  }
+}
+/* line 308, ../sass/screen.scss */
+.whippingboy .blogpost {
+  padding-top: 580px;
+}
+@media only screen and (max-width: 720px) {
+  /* line 308, ../sass/screen.scss */
+  .whippingboy .blogpost {
+    padding-top: 0px;
+  }
+}
+/* line 315, ../sass/screen.scss */
+.whippingboy header {
+  background-color: #7999b3;
+}
+/* line 318, ../sass/screen.scss */
+.whippingboy .svg-main {
+  fill: #9db8cf;
+}
+
+/* line 322, ../sass/screen.scss */
+.whippingboy p, .whippingboy h2, .whippingboy h3, .whippingboy blockquote {
+  color: #fff;
+}
+
+/* line 325, ../sass/screen.scss */
+.whippingboy a, a:hover {
+  color: #b9cdde;
+  text-decoration: none;
+}
+
+/* line 329, ../sass/screen.scss */
+.whippingboy a:hover {
+  color: #b9cdde;
+  text-decoration: underline;
+}
+
+/* line 333, ../sass/screen.scss */
+.conductcode {
+  background-color: #931613;
+}
+/* line 336, ../sass/screen.scss */
+.conductcode p, .conductcode h2, .conductcode h3 {
+  color: #fff;
+}
+/* line 339, ../sass/screen.scss */
+.conductcode a, .conductcode a:hover {
+  color: #e98681;
+}
+/* line 342, ../sass/screen.scss */
+.conductcode .svg-main {
+  fill: #e98681;
+}
+
+/* BODYCLASS VARIABLES */
+/* line 349, ../sass/screen.scss */
+.football {
+  background: url(../images/football.jpg) center;
+}
+
+/* line 352, ../sass/screen.scss */
+.viking {
+  background: url(../images/viking.jpg) center;
+}
+
+/* line 355, ../sass/screen.scss */
+.c3p0 {
+  background: url(../images/c3p0.jpg) center;
+}
+
+/* line 358, ../sass/screen.scss */
+.printers {
+  background: url(../images/printers.jpg) center;
+}
+
+/*
+-------------------------------------------
+float clear 
+-------------------------------------------
+*/
+/* line 373, ../sass/screen.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 382, ../sass/screen.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 386, ../sass/screen.scss */
+html[xmlns] .clearfix {
+  display: block;
+}
+
+/* line 390, ../sass/screen.scss */
+* html .clearfix {
+  height: 1%;
+}
